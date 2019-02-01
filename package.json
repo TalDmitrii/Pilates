@@ -1,7 +1,7 @@
 {
-  "name": "Panteon",
+  "name": "Pilates",
   "private": true,
-  "description": "Panteon",
+  "description": "Сайт для занятий спортом",
   "devDependencies": {
     "autoprefixer": "9.1.x",
     "browser-sync": "2.24.x",
