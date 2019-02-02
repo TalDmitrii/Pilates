@@ -1,0 +1,29 @@
+.produced-works {
+
+}
+
+.produced-works__list {
+  .list-reset();
+
+  margin-top: 50px;
+
+  margin-bottom: 50px;
+}
+
+.produced-works__item:not(:first-child) {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .produced-works__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .produced-works {
+    align-self: flex-end;
+  }
+}

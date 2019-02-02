@@ -1,0 +1,17 @@
+.feedback {
+  max-width: 720px;
+
+  margin: 0 auto;
+
+  border: 1px solid red;
+}
+
+.feedback__item:not(:first-child) {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .feedback__item {
+    display: flex;
+  }
+}

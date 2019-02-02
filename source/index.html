@@ -3,67 +3,74 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- <link rel="preload" href="fonts/opensans-regular.woff2" as="font">
+    <link rel="preload" href="fonts/opensans-semibold.woff2" as="font">
+    <link rel="preload" href="fonts/opensans-lightitalic.woff2" as="font"> -->
     <link rel="stylesheet" href="css/style.min.css">
     <title>Заголовок</title>
   </head>
   <body class="site-page">
     <!-- <include class="sprite visually-hidden" src="build/img/sprite.svg"> Sprite after js-task</include> -->
     <header class="page-header">
-      <nav class="main-navigation main-navigation--opened main-navigation--nojs">
-        <a class="logo" href="#" aria-label="Ссылка на главную страницу">
-          ARTACTIVE
-        </a>
-        <button class="main-navigation__toggle" aria-label="Кнопка переключения меню">Переключить меню</button>
-        <div class="main-navigation__list-wrapper">
-          <ul class="main-navigation__list">
-            <li class="main-navigation__item"><a href="item-1">О нас</a></li>
-            <li class="main-navigation__item"><a href="item-2">Услуги</a></li>
-            <li class="main-navigation__item"><a href="item-3">Отзывы</a></li>
-            <li class="main-navigation__item"><a href="item-4">FAQ</a></li>
-            <li class="main-navigation__item"><a href="item-5">Контакты</a></li>
-          </ul>
-          <div class="request-call">
-            <span class="request-call__phone-number">
-              +7 (920) 148 81 31
-            </span>
-            <button class="request-call__button-request">
-              Заказать звонок
-            </button>
+      <div class="page-header__contant-wrapper">
+        <nav class="main-navigation main-navigation--opened main-navigation--nojs">
+          <a class="logo" href="#" aria-label="Ссылка на главную страницу">
+            ARTACTIVE
+          </a>
+          <button class="main-navigation__toggle" aria-label="Кнопка переключения меню">Переключить меню</button>
+          <div class="main-navigation__list-wrapper">
+            <ul class="main-navigation__list">
+              <li class="main-navigation__item"><a href="item-1">О нас</a></li>
+              <li class="main-navigation__item"><a href="item-2">Услуги</a></li>
+              <li class="main-navigation__item"><a href="item-3">Отзывы</a></li>
+              <li class="main-navigation__item"><a href="item-4">FAQ</a></li>
+              <li class="main-navigation__item"><a href="item-5">Контакты</a></li>
+            </ul>
+            <div class="request-call">
+              <span class="request-call__phone-number">
+                +7 (920) 148 81 31
+              </span>
+              <button class="request-call__button-request">
+                Заказать звонок
+              </button>
+            </div>
           </div>
+        </nav>
+        <div class="page-header__info">
+          <p class="page-header__slogan">
+            Размер<br> не имеет<br> значения!
+          </p>
+          <h1>
+            Оперативная полиграфия и широкоформатная печать любого размера 
+          </h1>
+          <button class="button button--order-print" aria-label="Кнопка заказа печати">Заказать печать</button>
+          <p class="page-header__order-tip">
+            с доставкой по Ярославлю и Ярославской области
+          </p>
         </div>
-      </nav>
-      <div class="page-header__info">
-        <p class="page-header__slogan">
-          Размер не имеет значения!
-        </p>
-        <h1>
-          Оперативная полиграфия и широкоформатная печать любого размера 
-        </h1>
-        <button class="button button--order-print" aria-label="Кнопка заказа печати">Заказать печать</button>
-        <p class="page-header__order-tip">
-          с доставкой по Ярославлю и Ярославской области
-        </p>
+        <a href="#main-contant" class="header-anchor">Основное содержимое сайта</a>
       </div>
-      <a href="#main-contant" class="header-anchor">Основное содержимое сайта</a>
     </header>
     <main class="page-container" id="main-contant">
       <section class="about-us">
-        <h2 class="about-us__header section-header">1. О нас</h2>
-        <h3 class="about-us__block-header block-header">
-          Полный спектр услуг — от дизайна до печати
-        </h3>
-        <p class="about-us__text">
-          К вашим услугам мы предлагаем полный спектр работ, начиная от печати открыток, 
-          чертежей, баннеров, растяжек, создания буклетов и эксклюзивных календарей, и заканчивая постпечатной обработкой.
-        </p>
-        <p class="about-us__text">
-          В копицентре не просто предоставляют услуги печати: мы ориентируемся на комплексное обслуживание. 
-          Все услуги, будь то оперативная цифровая печать открыток или разработка серии календарей,
-          Вы можете получить в одном месте, воспользовавшись сопутствующими услугами копицентра.
-        </p>
-        <p class="about-us__text">
-          При этом работа выполняется в максимально сжатые сроки и не в ущерб качеству конечного результата, которое неизменно остается на высоте.
-        </p>
+        <div class="about-us__inner-wrapper">
+          <h2 class="about-us__header section-header">1. О нас</h2>
+          <h3 class="about-us__block-header block-header">
+            Полный спектр услуг — от дизайна до печати
+          </h3>
+          <p class="about-us__text">
+            К вашим услугам мы предлагаем полный спектр работ, начиная от печати открыток, 
+            чертежей, баннеров, растяжек, создания буклетов и эксклюзивных календарей, и заканчивая постпечатной обработкой.
+          </p>
+          <p class="about-us__text">
+            В копицентре не просто предоставляют услуги печати: мы ориентируемся на комплексное обслуживание. 
+            Все услуги, будь то оперативная цифровая печать открыток или разработка серии календарей,
+            Вы можете получить в одном месте, воспользовавшись сопутствующими услугами копицентра.
+          </p>
+          <p class="about-us__text">
+            При этом работа выполняется в максимально сжатые сроки и не в ущерб качеству конечного результата, которое неизменно остается на высоте.
+          </p>
+        </div>
         <ul class="about-us__list-steps">
           <li class="about-us__list-item">
             <p class="about-us__list-text">Приём и детальное обсуждение заказа</p>
@@ -80,8 +87,8 @@
         </ul>
       </section>
       <section class="services">
-        <h2 class="services__header section-header">2. Услуги</h2>
         <div class="services__block-wrapper">
+          <h2 class="services__header section-header">2. Услуги</h2>
           <h3 class="services__block-header block-header">
             Широкоформатная печать баннеров, растяжек, афиш
           </h3>
@@ -96,7 +103,7 @@
           <div class="produced-works">
             <ul class="produced-works__list">
               <li class="produced-works__item">
-                <img src="" width="292" height="188" alt="Пример нашей работы">
+                <img src="img/billboard.jpg" width="292" height="188" alt="Пример нашей работы">
                 <p>Растяжка на ул. Ленина</p>
               </li>
               <li class="produced-works__item">
@@ -150,15 +157,17 @@
               <span><i>Есть вопросы?</i></span>
               <span>Оставьте заявку на консультацию</span>
             </p>
-            <p class="form-consultation__input">
-              <label for="name">Имя</label>
-              <input type="text" id="name" required>
-            </p>
-            <p class="form-consultation__input">
-              <label for="phone">Телефон</label>
-              <input type="number" id="phone" required>
-            </p>
-            <button class="button" aria-label="Отправить форму">Отправить</button>
+            <div class="form-consultation__inner-wrapper">
+              <p class="form-consultation__input">
+                <label for="name">Имя</label>
+                <input type="text" id="name" required>
+              </p>
+              <p class="form-consultation__input">
+                <label for="phone">Телефон</label>
+                <input type="number" id="phone" required>
+              </p>
+              <button class="button" aria-label="Отправить форму">Отправить</button>
+            </div>
           </form>
         </div>
       </section>
@@ -166,7 +175,7 @@
         <h2 class="feedback__header section-header">3. Отзывы</h2>
         <ul class="feedback__list">
           <li class="feedback__item">
-            <img class="feedback__author-photo" src="" alt="фотография пользователя">
+            <img class="feedback__author-photo" src="img/author-1.jpg" alt="фотография пользователя">
             <p class="feedback__author-text">
               Обратился в компанию АртАктив за визитками. Это мой первый опыт, поэтому немного нервничал, не знал, с чего начать. 
               Остался доволен, потому что мне всё объяснили, показали и сделали по высшему разряду. Советую!
@@ -255,7 +264,7 @@
           <li class="faq__item">
             <h3 class="faq__item-header">Вызов курьера бесплатный?</h3>
             <p class="faq__text">
-              В зависимости от соимости заказа, курьер может доставить вам продукцию бесплатно (при соимости от 600 руб.) 
+              В зависимости от соимости заказа, курьер может доставить вам продукцию бесплатно (при стоимости от 600 руб.) 
               или от 150 руб. в пределах Ярославля и до 500 руб. в пределах Ярославской области.
             </p>
           </li>
@@ -265,34 +274,37 @@
             <span><i>Есть вопросы?</i></span>
             <span>Оставьте заявку на консультацию</span>
           </p>
-          <p class="form-consultation__input">
-            <label for="name-1">Имя</label>
-            <input type="text" id="name-1" required>
-          </p>
-          <p class="form-consultation__input">
-            <label for="phone-1">Телефон</label>
-            <input type="number" id="phone-1" required>
-          </p>
-          <button class="button" aria-label="Отправить форму">Отправить</button>
+          <div class="form-consultation__inner-wrapper">
+            <p class="form-consultation__input">
+              <label for="name-1">Имя</label>
+              <input type="text" id="name-1" required>
+            </p>
+            <p class="form-consultation__input">
+              <label for="phone-1">Телефон</label>
+              <input type="number" id="phone-1" required>
+            </p>
+            <button class="button" aria-label="Отправить форму">Отправить</button>
+          </div>
         </form>
       </section>
     </main>
     <footer class="page-footer">
       <section class="contacts">
-        <h2 class="contacts__header section-header">5. Контакты</h2>
-        <p class="contacts__info">
-          <span class="contacts__adress">г. Ярославль, проспект Октября, 88</span>
-          <span class="contacts__mail">
-            <a href="mailto:art-aktiv.76@mail.ru">art-aktiv.76@mail.ru</a>
-          </span>
-          <span class="contacts__phone">+7 (920) 148 81 31</span>
-        </p>
+        <div class="contacts__contant-wrapper">
+          <h2 class="contacts__header section-header">5. Контакты</h2>
+          <p class="contacts__info">
+            <span class="contacts__adress">г. Ярославль, проспект Октября, 88</span>
+            <span class="contacts__mail">
+              <a href="mailto:art-aktiv.76@mail.ru">art-aktiv.76@mail.ru</a>
+            </span>
+            <span class="contacts__phone">+7 (920) 148 81 31</span>
+          </p>
+        </div>
       </section>
-      <iframe src="https://yandex.ru/map-widget/v1/-/CBRtvJFl8B" width="320" height="400" frameborder="1" allowfullscreen="true"></iframe>
       <div class="documents">
-        <p class="copyright">ООО «АртАктив», 2017 ©</p>
+        <p class="documents__copyright">ООО «АртАктив», 2017 ©</p>
         <a href="#" aria-label="Политика конфиденциальноси">Политика конфиденциальноси</a>
-        <p class="producer">Designed by Sergey Strogiy</p>
+        <p class="documents__producer">Designed by Sergey Strogiy</p>
       </div>
     </footer>
     <script src="js/webp-support.min.js"></script>

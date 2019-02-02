@@ -1,0 +1,27 @@
+.page-header__contant-wrapper {
+  max-width: 390px;
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 auto;
+
+  border: 1px solid red;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__contant-wrapper {
+    max-width: 720px;
+  }
+
+  .page-header__info {
+    max-width: 300px;
+
+    margin-left: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__contant-wrapper {
+    max-width: @desktop-width;
+  }
+}

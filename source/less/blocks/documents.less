@@ -1,0 +1,29 @@
+.documents {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.documents__producer {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .documents {
+    max-width: 720px;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .documents {
+    max-width: @desktop-width;
+  }
+
+  .documents__producer {
+    display: block;
+  }
+}
