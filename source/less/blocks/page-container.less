@@ -1,3 +1,23 @@
 .page-container {
-  // border: 1px solid red;
+  color: @text-color;
+
+  background-image: linear-gradient(90deg, transparent 0px, transparent 105px, #f2f2f2 106px, #f2f2f2 107px);
+  background-size: 107px;
+  background-position-x: center;
+}
+
+@media (min-width: @tablet-width) {
+  .page-container {
+    background-image: linear-gradient(90deg, transparent 0px, transparent 185px, #f2f2f2 186px, #f2f2f2 187px);
+    background-size: 187px;
+    background-position-x: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-container {
+    background-image: linear-gradient(90deg, transparent 0px, transparent 289px, #f2f2f2 290px, #f2f2f2 291px);
+    background-size: 291px;
+    background-position-x: 0;
+  }
 }

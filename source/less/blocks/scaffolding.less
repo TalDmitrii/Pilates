@@ -1,6 +1,7 @@
 @tablet-width: 750px;
 @desktop-width: 1170px;
 @button-color: #fb0275;
+@text-color: #5e606a;
 
 @font-face {
   font-weight: normal;
@@ -26,6 +27,10 @@
   src: url("../fonts/opensans-lightitalic.woff2") format("woff2"), url("../fonts/opensans-lightitalic.woff") format("woff");
 }
 
+button {
+  cursor: pointer;
+}
+
 .visually-hidden {
   position: absolute;
 
@@ -47,6 +52,21 @@
   list-style: none;
 }
 
-button {
-  cursor: pointer;
+.heading-h2() {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+  color: #7f38bd;
+}
+
+.heading-h3() {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
+  color: #383d52;
+
+  @media (min-width: @tablet-width) {
+    font-size: 32px;
+    line-height: 36px;
+  }
 }
