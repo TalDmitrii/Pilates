@@ -10,14 +10,19 @@
     <title>Заголовок</title>
   </head>
   <body class="site-page">
-    <!-- <include class="sprite visually-hidden" src="build/img/sprite.svg"> Sprite after js-task</include> -->
+    <div class="visually-hidden">
+      <include class="sprite" src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header">
+      <div class="page-header__bg-wrapper"></div>
       <div class="page-header__contant-wrapper">
         <nav class="main-navigation main-navigation--opened main-navigation--nojs">
           <a class="logo" href="#" aria-label="Ссылка на главную страницу">
             ARTACTIVE
           </a>
-          <button class="main-navigation__toggle" aria-label="Кнопка переключения меню">Переключить меню</button>
+          <button class="main-navigation__toggle burger" aria-label="Кнопка переключения меню">
+            <span>Переключить меню</span>
+          </button>
           <div class="main-navigation__list-wrapper">
             <ul class="main-navigation__list">
               <li class="main-navigation__item"><a href="item-1">О нас</a></li>
@@ -35,18 +40,21 @@
               </button>
             </div>
           </div>
+          <div class="main-navigation__overlay"></div>
         </nav>
         <div class="page-header__info">
           <p class="page-header__slogan">
             Размер<br> не имеет<br> значения!
           </p>
           <h1>
-            Оперативная полиграфия и широкоформатная печать любого размера 
+            Оперативная полиграфия<br> и широкоформатная печать любого размера 
           </h1>
-          <button class="button button--order-print" aria-label="Кнопка заказа печати">Заказать печать</button>
-          <p class="page-header__order-tip">
-            с доставкой по Ярославлю и Ярославской области
-          </p>
+          <div class="page-header__button-wrapper">
+            <button class="button button--order-print" aria-label="Кнопка заказа печати">Заказать печать</button>
+            <p class="page-header__order-tip">
+              с доставкой по Ярославлю<br> и Ярославской области
+            </p>
+          </div>
         </div>
         <a href="#main-contant" class="header-anchor">Основное содержимое сайта</a>
       </div>

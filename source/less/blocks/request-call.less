@@ -1,16 +1,80 @@
 .request-call {
   display: flex;
   flex-direction: column;
+  
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #333333;
+}
+
+.request-call__phone-number {
+  margin-bottom: 16px;
 }
 
 .request-call__button-request {
-  width: 140px;
-  height: 25px;
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.55px;
+  color: #fb0275;
+
+  padding: 11px 21px;
+
+  background-color: transparent;
+
+  border-radius: 20px;
+  border: 2px solid #fb0275;
+
+  &:hover,
+  &:focus {
+    color: #333333;
+
+    border-color: #333333;
+  }
+
+  &:active {
+    color: fade(#333333, 50%);
+
+    border-color: fade(#333333, 50%);
+
+    transform: scale(0.9);
+  }
 }
 
 @media (min-width: @desktop-width) {
   .request-call {
     display: flex;
     flex-direction: row;
+    align-items: center;
+
+    color: white;
+  }
+
+  .request-call__phone-number {
+    margin-bottom: 0;
+    margin-right: 35px;
+  }
+
+  .request-call__button-request {
+    color: white;
+
+    border-color: white;
+
+    &:hover,
+    &:focus {
+    color: @button-color;
+
+    border-color: @button-color;
+  }
+
+  &:active {
+    color: fade(@button-color, 50%);
+
+    border-color: fade(@button-color, 50%);
+  }
   }
 }

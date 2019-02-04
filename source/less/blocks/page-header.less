@@ -1,27 +1,197 @@
+.page-header {
+  position: relative;
+
+  color: white;
+
+  background-color: #8038c1;
+  background-image: url("../img/curvilinear-bg.svg"),
+                    linear-gradient(90deg, transparent 0px, transparent 298px, #974edc 299px, #974edc 300px);
+  background-repeat: no-repeat, repeat-x;
+  background-size: cover, 300px auto;
+  background-position-y: 277px, 1px; 
+  background-position-x: 0, -215px;
+}
+
+.page-header__bg-wrapper {
+  width: 350px;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  margin-left: -200px;
+
+
+  background-image: url("../img/header-bg.png");
+  background-repeat: no-repeat;
+  background-position: -5px 46px;
+}
+
 .page-header__contant-wrapper {
-  max-width: 390px;
+  max-width: 450px;
   display: flex;
   flex-direction: column;
+  position: relative;
 
   margin: 0 auto;
+  padding: 23px 15px 65px;
 
-  border: 1px solid red;
+  box-sizing: border-box;
+}
+
+.page-header__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__slogan {
+  font-size: 36px;
+  line-height: 46px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.06px;
+
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.page-header h1 {
+  font-size: 21px;
+  line-height: 24px;
+  font-weight: 400;
+
+  margin: 0;
+  margin-bottom: 45px;
+}
+
+.page-header__order-tip {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+
+  margin: 0 auto;
+}
+
+.page-header .button {
+  margin: 0 auto;
+  margin-bottom: 27px;
 }
 
 @media (min-width: @tablet-width) {
+  .page-header {
+    background-image: url("../img/curvilinear-bg-tablet.svg"),
+                      linear-gradient(90deg, transparent 0px, transparent 292px, #974edc 293px, #974edc 294px);
+    background-position: center bottom, -195px;
+    background-size: auto 293px, 294px auto;
+    background-repeat: no-repeat, repeat-x;    
+  }
+
+  .page-header__bg-wrapper {
+    width: 700px;
+    height: 550px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    margin-left: -450px;
+
+    background-image: url("../img/header-bg-tablet.png");
+    background-position-y: 57px;
+  }
+
   .page-header__contant-wrapper {
-    max-width: 720px;
+    max-width: 750px;
+
+    padding-bottom: 70px;
   }
 
   .page-header__info {
-    max-width: 300px;
+    max-width: 275px;
 
     margin-left: auto;
+  }
+
+  .page-header__slogan {
+    font-size: 45px;
+    line-height: 51px;
+    letter-spacing: 1.32px;
+
+    margin-bottom: 28px;
+  }
+
+  .page-header h1 {
+    margin-bottom: 37px;
+  }
+
+  .page-header .button {
+    margin: 0;
+    margin-bottom: 27px;
+    margin-right: auto;
+  }
+
+  .page-header__order-tip {
+    margin: 0;
+    margin-bottom: 20px;
+    margin-right: auto;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .page-header {
+    background-image: url("../img/curvilinear-bg-desktop.jpg");
+    background-size: cover;
+  }
+
+  .page-header__bg-wrapper {
+    height: 850px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    margin-left: -675px;
+
+    background-image: url("../img/header-bg-desktop.png");
+    background-position-y: 182px;
+  }
+
   .page-header__contant-wrapper {
     max-width: @desktop-width;
+
+    padding-top: 60px;
+    padding-bottom: 218px;
+  }
+
+  .page-header__info {
+    max-width: 490px;
+
+    margin-right: 20px;
+  }
+
+  .page-header__slogan {
+    font-size: 60px;
+    line-height: 74px;
+    font-weight: bold;
+    letter-spacing: 1.76px;
+  }
+
+  .page-header h1 {
+    font-size: 32px;
+    line-height: 38px;
+
+    margin-bottom: 78px;
+  }
+
+  .page-header__button-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .page-header .button {
+    margin: 0;
+    margin-right: 29px;
+  }
+
+  .page-header__order-tip {
+    margin: 0;
   }
 }

@@ -1,0 +1,43 @@
+.button {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.57px;
+  color: white;
+
+  padding: 17px 62px 18px;
+
+  background-color: @button-color;
+  border-radius: 30px;
+  border: none;
+
+  &:hover,
+  &:focus {
+    color: @button-color;
+
+    padding: 15px 60px 16px;
+
+    background-color: white;
+
+    border: 2px solid @button-color;
+  }
+
+  &:active {
+    color: fade(#333333, 50%);
+
+    border-color: fade(#333333, 50%);
+
+    transform: scale(0.9);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .button.button--order-print {
+    padding: 17px 42px 18px;
+
+    &:hover,
+    &:focus {
+      padding: 15px 40px 16px;
+    }
+  }
+}

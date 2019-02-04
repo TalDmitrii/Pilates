@@ -1,5 +1,6 @@
 @tablet-width: 750px;
 @desktop-width: 1170px;
+@button-color: #fb0275;
 
 @font-face {
   font-weight: normal;
@@ -25,9 +26,27 @@
   src: url("../fonts/opensans-lightitalic.woff2") format("woff2"), url("../fonts/opensans-lightitalic.woff") format("woff");
 }
 
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .list-reset() {
   margin: 0;
   padding: 0;
 
   list-style: none;
+}
+
+button {
+  cursor: pointer;
 }
