@@ -3,6 +3,68 @@
   flex-direction: column;
 }
 
+.form-consultation span {
+  font-size: 20px;
+  line-height: 30px;
+  color: #383d52;
+}
+
+.form-consultation i {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.form-consultation__input-wrapper {
+  position: relative;
+}
+
+.form-consultation__label {
+  position: absolute;
+  top: 4px;
+  left: 14px;
+
+  font-size: 14px;
+  font-style: italic;
+  line-height: 24px;
+  color: #868995;
+
+  transition-duration: 0.2s;
+}
+
+.form-consultation__input {
+  width: 100%;
+  height: 32px;
+  position: relative;
+
+  // background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #cccccc;
+
+  &::before,
+  &::after {
+    width: 50%;
+    height: 2px;
+    content: "";
+    position: absolute;
+    bottom: 1px;
+
+    background-color: #757575;
+  }
+
+  &::before {
+    left: 50%;
+  }
+
+  &::after {
+    right: 50%;
+  }
+}
+
+.form-consultation__input:focus ~ .form-consultation__label,
+.form-consultation__input:valid ~ .form-consultation__label {
+  transform: scale(0.8) translateY(-30px);
+}
+
 @media (min-width: @desktop-width) {
   .form-consultation__inner-wrapper {
     display: flex;

@@ -1,5 +1,27 @@
-.services {
-  
+.services__bg-wrapper:nth-child(odd) {
+  background-color: #faf8fb;
+}
+
+.services__bg-wrapper:nth-child(2) {
+  background-image: url("../img/yellow-sofa.png");
+  background-repeat: no-repeat;
+  background-position: 52px 339px;
+}
+
+.services__block-wrapper--billboard {
+  padding: 63px 18px 73px;
+}
+
+.services__header {
+  margin-bottom: 40px;
+}
+
+.services__block-header {
+  margin: 0;
+}
+
+.services__block-wrapper--billboard .services__block-header {
+  margin-bottom: 45px; 
 }
 
 .services__block-wrapper {
@@ -12,16 +34,100 @@
 
 .services__list-services {
   .list-reset();
+
+  font-size: 14px;
+  line-height: 24px;
+
+  margin-bottom: 45px;
 }
 
 .services__list-item {
-  margin-bottom: 10px;
+  position: relative;
+
+  text-indent: 10px;
+
+  &::before {
+    width: 3px;
+    height: 3px;
+    content: "";
+    position: absolute;
+    left: 1px;
+    top: 11px;
+    
+    background-color: #5e606a;
+  }
 }
 
 .services__order-consultation {
-  width: 288px;
-  height: 181px;
+  color: white;
+
+  padding: 29px 23px 30px;
+
   background-color: #883eca;
+
+  border-radius: 10px;
+
+  box-shadow: 0 23px 32px rgba(81, 8, 86, 0.33);
+}
+
+.services__order-consultation p {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 16px;
+  line-height: 24px;
+
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.services__order-consultation i {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.services__order-button {
+  padding-left: 76px;
+  padding-right: 76px;
+}
+
+.services__block-wrapper--interior {
+  padding: 69px 15px 251px;
+}
+
+.services__block-wrapper--interior .services__block-header {
+  margin-bottom: 42px;
+}
+
+.services__description {
+  font-size: 14px;
+  line-height: 24px;
+
+  margin: 0;
+}
+
+.services__block-wrapper--interior .services__description {
+  margin-bottom: 47px;
+}
+
+.services__block-wrapper--all {
+  padding: 66px 15px 61px;
+
+  background-image: url("../img/firstyle.png");
+  background-repeat: no-repeat;
+  background-position: center 633px;
+}
+
+.services__block-wrapper--all .services__block-header{
+  margin-bottom: 47px;
+}
+
+.services__block-wrapper--all .services__description {
+  margin-bottom: 25px;
+}
+
+.services__block-wrapper--all .services__description:last-of-type {
+  margin-bottom: 319px;
 }
 
 @media (min-width: @tablet-width) {
