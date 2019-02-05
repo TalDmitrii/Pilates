@@ -73,7 +73,7 @@ gulp.task("webp", function () {
     .pipe(gulp.dest("source/img"));
 });
 gulp.task("html", function () {
-  return gulp.src("*.html")
+  return gulp.src("source/*.html")
     .pipe(posthtml([
       include()
     ]))
