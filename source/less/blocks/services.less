@@ -2,14 +2,71 @@
   background-color: #faf8fb;
 }
 
+.services__bg-wrapper .services__block-header {
+  max-width: 290px;
+  position: relative;
+  z-index: 2;
+
+  &::before {
+    width: 95px;
+    height: 137px;
+    position: absolute;
+    top: -50px;
+    left: 50px;
+    z-index: -1;
+
+    font-family: "Helvetica", sans-serif;
+    font-size: 180px;
+    line-height: 180px;
+    font-weight: 900;
+    color: #faf8fb;
+    text-shadow: 0 0 15px #7f38bd;
+  }
+}
+
+.services__bg-wrapper:nth-child(1) .services__block-header {
+  &::before {
+    content: "1";
+  }
+}
+
+.services__bg-wrapper:nth-child(2) .services__block-header {
+  &::before {
+    content: "2";
+  }
+}
+
+.services__bg-wrapper:nth-child(3) .services__block-header {
+  &::before {
+    content: "3";
+  }
+}
+
 .services__bg-wrapper:nth-child(2) {
+  position: relative;
+
   background-image: url("../img/yellow-sofa.png");
   background-repeat: no-repeat;
   background-position: 52px 339px;
+
+  &::after {
+    width: 2px;
+    height: 83px;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    margin-bottom: -60px;
+
+    background-color: #883eca;
+
+    box-shadow: -7px -48px 0 0 #883eca;
+  }
 }
 
 .services__block-wrapper--billboard {
-  padding: 63px 18px 73px;
+  padding: 63px 15px 73px;
 }
 
 .services__header {
@@ -28,8 +85,6 @@
   max-width: 390px;
 
   margin: 0 auto;
-
-  border: 1px solid red;
 }
 
 .services__list-services {
@@ -87,8 +142,7 @@
 }
 
 .services__order-button {
-  padding-left: 76px;
-  padding-right: 76px;
+  width: 100%;
 }
 
 .services__block-wrapper--interior {
@@ -110,12 +164,16 @@
   margin-bottom: 47px;
 }
 
+.services__submit-application {
+  width: 100%;
+}
+
 .services__block-wrapper--all {
   padding: 66px 15px 61px;
 
   background-image: url("../img/firstyle.png");
   background-repeat: no-repeat;
-  background-position: center 633px;
+  background-position: center 570px;
 }
 
 .services__block-wrapper--all .services__block-header{
@@ -135,13 +193,125 @@
     max-width: 720px;
   }
 
+  .services__block-wrapper--billboard {
+    padding-top: 73px;
+  }
+
+  .services__bg-wrapper .services__block-header {
+    max-width: 565px;
+
+    &::before {
+      top: -65px;
+    }
+  }
+
+  .services__header {
+    margin-bottom: 60px;
+  }
+
+  .services__list-services {
+    margin-bottom: 68px;
+  }
+
   .services__slider {
-    margin-top: -80px;
+    margin-top: -47px;
+  }
+
+  .services__block-wrapper--interior {
+    padding-top: 400px;
+    padding-bottom: 400px;
+  }
+
+  .services__block-wrapper--interior .services__block-header {
+    margin-bottom: 63px;
+  }
+
+  .services__block-wrapper--interior .services__description {
+    max-width: 550px;
+  }
+
+  .services__bg-wrapper:nth-child(2) {
+    background-image: url("../img/yellow-sofa-tablet.png");
+    background-position: 252px 430px;
   }
 
   .services__order-consultation {
     width: 719px;
-    height: 117px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+
+    margin-bottom: -350px;
+    padding: 33px 32px 36px;
+
+    box-sizing: border-box;
+  }
+
+  .services__order-consultation p {
+    min-width: 345px;
+    flex-direction: row;
+
+    margin: 0;
+  }
+
+  .services__order-consultation i {
+    margin-right: 36px;
+  }
+
+  .services__order-button {
+    max-width: 249px;
+  }
+
+  .services__submit-application {
+    width: 241px;
+
+    padding-left: 37px;
+    padding-right: 37px;
+  }
+
+  .services__bg-wrapper:nth-child(3) {
+    background-image: url("../img/firstyle-tablet.png");
+    background-repeat: no-repeat;
+    background-position: 120% 455px;
+  }
+
+  .services__block-wrapper--all {
+    padding-top: 108px;
+    padding-bottom: 118px;
+
+    background-image: none;
+  }
+
+  .services__block-wrapper--all .services__block-header {
+    max-width: 435px;
+
+    margin-bottom: 53px;
+  }
+
+  .services__block-wrapper--all .services__block-header br {
+    display: none;
+  }
+
+  .services__block-wrapper--all .services__description {
+    max-width: 640px;
+  }
+
+  .services__block-wrapper--all .services__description:last-of-type {
+    margin-bottom: 70px;
+  }
+
+  .services__block-wrapper--all .services__form {
+    max-width: 364px;
+
+    padding-right: 119px;
+
+    background-image: url("../img/paper-plane.svg");
+    background-position: bottom right;
+    background-repeat: no-repeat;
+
+    box-sizing: border-box;
   }
 }
 
@@ -150,8 +320,9 @@
     max-width: @desktop-width;
   }
 
-  .services__scaffolding-wrapper {
-    width: 50%;
+  .services__block-wrapper--billboard {
+    padding-top: 99px;
+    padding-bottom: 183px;
   }
 
   .services__block-wrapper:first-child {
@@ -169,14 +340,86 @@
     margin: 0;
   }
 
+  .services__bg-wrapper .services__block-header {
+    max-width: 430px;
+
+    &::before {
+      top: -65px;
+      left: -80px;
+    }
+  }
+
+  .services__header {
+    margin-bottom: 80px;
+  }
+
+  .services__scaffolding-wrapper {
+    width: 50%;
+  }
+
   .services__slider {
-    margin-top: -80px;
+    margin-top: -45px;
   }
 
   .services__order-consultation {
     width: 473px;
     height: 117px;
 
-    margin-top: -110px;
+    margin-top: -223px;
+    margin-bottom: 0;
+  }
+
+  .services__order-consultation p {
+    min-width: 200px;
+    flex-direction: column;
+  }
+
+  .services__bg-wrapper:nth-child(2) {
+    display: flex;
+
+    background-image: url("../img/yellow-sofa-desktop.png");
+    background-position: -250px center;
+  }
+
+  .services__block-wrapper--interior {
+    width: 50%;
+
+    margin: 0;
+    margin-left: auto;
+    padding-top: 130px;
+    padding-bottom: 568px;
+
+    box-sizing: border-box;
+  }
+
+  .services__block-wrapper--interior .services__block-header {
+    margin-bottom: 53px;
+  }
+
+  .services__block-wrapper--interior .services__description {
+    margin-bottom: 57px;
+  }
+
+  .services__bg-wrapper:nth-child(3) {
+    background-image: none;
+  }
+
+  .services__block-wrapper--all {
+    padding-top: 138px;
+    padding-bottom: 157px;
+
+    background-image: url("../img/paper-plane-desktop.svg"),
+                      url("../img/firstyle-desktop.png");
+    background-position: right 400px, right top;
+  }
+
+  .services__block-wrapper--all .services__form {
+    max-width: 765px;
+
+    background-image: none;
+  }
+
+  .services__block-wrapper--all .services__description {
+    max-width: 560px;
   }
 }

@@ -112,7 +112,15 @@
             <div class="produced-works">
               <ul class="produced-works__list">
                 <li class="produced-works__item">
-                  <img src="img/billboard.jpg" width="292" height="188" alt="Пример нашей работы">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1170px)" srcset="img/billboard-desktop.webp">
+                    <source type="image/webp" media="(min-width: 750px)" srcset="img/billboard-tablet.webp">
+                    <source type="image/webp" srcset="img/billboard.webp">
+      
+                    <source media="(min-width: 1170px)" srcset="img/billboard-desktop.jpg">
+                    <source media="(min-width: 750px)" srcset="img/billboard-tablet.jpg">
+                    <img src="img/billboard.jpg" width="292" height="188" alt="Пример нашей работы">
+                  </picture>
                   <p>Растяжка на ул. Ленина</p>
                 </li>
                 <li class="produced-works__item">
@@ -151,7 +159,7 @@
               Печатаем широкоформатные фотографии на глянцевой и матовой фотобумаге разной плотности, на глянцевом и матовом холсте или на самоклеющейся пленке. 
               Также можем предложить обработку и редактирование ваших фотографий силами наших дизайнеров: композиции, фотоколлаж, ретушь, различные эффекты
             </p>
-            <button class="submit-application button" aria-label="Оставить заявку на печать">Оставить заявку</button>
+            <button class="services__submit-application button" aria-label="Оставить заявку на печать">Оставить заявку</button>
           </div>
         </div>
         <div class="services__bg-wrapper">
@@ -293,13 +301,13 @@
             <span>Оставьте заявку на консультацию</span>
           </p>
           <div class="form-consultation__inner-wrapper">
-            <p class="form-consultation__input">
-              <label for="name-1">Имя</label>
-              <input type="text" id="name-1" required>
+            <p class="form-consultation__input-wrapper">
+              <input class="form-consultation__input" type="text" id="name-1" required>
+              <label class="form-consultation__label" for="name-1">Имя</label>
             </p>
-            <p class="form-consultation__input">
-              <label for="phone-1">Телефон</label>
-              <input type="number" id="phone-1" required>
+            <p class="form-consultation__input-wrapper">
+              <input class="form-consultation__input" type="number" id="phone-1" required>
+              <label class="form-consultation__label" for="phone-1">Телефон</label>
             </p>
             <button class="button" aria-label="Отправить форму">Отправить</button>
           </div>

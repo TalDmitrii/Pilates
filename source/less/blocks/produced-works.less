@@ -30,15 +30,36 @@
 }
 
 @media (min-width: @tablet-width) {
+  .produced-works {
+    position: relative;
+    z-index: 10;
+
+    margin-bottom: 49px;
+  }
+
   .produced-works__item {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+  }
+
+  .produced-works__item img {
+    width: 719px;
+    height: 460px;
+
+    margin-bottom: 34px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .produced-works {
     align-self: flex-end;
+     
+    margin-top: -340px;
+  }
+
+  .produced-works__item img {
+    width: 570px;
+    height: 460px;
   }
 }
