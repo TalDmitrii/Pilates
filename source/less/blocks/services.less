@@ -48,21 +48,6 @@
   background-image: url("../img/yellow-sofa.png");
   background-repeat: no-repeat;
   background-position: 52px 339px;
-
-  &::after {
-    width: 2px;
-    height: 83px;
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-
-    margin-bottom: -60px;
-
-    background-color: #883eca;
-
-    box-shadow: -7px -48px 0 0 #883eca;
-  }
 }
 
 .services__block-wrapper--billboard {
@@ -232,7 +217,22 @@
 
   .services__bg-wrapper:nth-child(2) {
     background-image: url("../img/yellow-sofa-tablet.png");
-    background-position: 252px 430px;
+    background-position: right -280px top 430px;
+
+    &::after {
+      width: 2px;
+      height: 83px;
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+  
+      margin-bottom: -60px;
+  
+      background-color: #883eca;
+  
+      box-shadow: -7px -48px 0 0 #883eca;
+    }
   }
 
   .services__order-consultation {
@@ -378,7 +378,7 @@
     display: flex;
 
     background-image: url("../img/yellow-sofa-desktop.png");
-    background-position: -250px center;
+    background-position: -140px center;
   }
 
   .services__block-wrapper--interior {

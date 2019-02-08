@@ -17,7 +17,7 @@
   margin-bottom: 16px;
 }
 
-.main-navigation__item a {
+.main-navigation__anchor {
   font-size: 13px;
   line-height: 48px;
   color: #333333;
@@ -75,6 +75,10 @@
   .main-navigation--opened .main-navigation__overlay {
     display: block;
   }
+
+  .main-navigation--closed .main-navigation__overlay {
+    display: none;
+  }
   
   .main-navigation--nojs .main-navigation__overlay {
     display: none;
@@ -109,7 +113,7 @@
     display: none;
   }
 
-  .main-navigation__item a {
+  .main-navigation__anchor {
     color: white;
   }
 
@@ -130,7 +134,7 @@
     margin-bottom: 0;
   }
 
-  .main-navigation__item a {
+  .main-navigation__anchor {
     line-height: 24px;
   }
 }

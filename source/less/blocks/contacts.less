@@ -1,23 +1,139 @@
+.contacts {
+  padding: 67px 15px 199px;
+
+  background-color: #65269d;
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
+  background-size: 400px auto;
+  background-position: center;
+}
+
 .contacts__contant-wrapper {
   max-width: 290px;
 
   margin: 0 auto;
+  padding: 42px 39px 57px;
 
-  border: 1px solid #000;
+  background-color: #ffffff;
+  box-shadow: 0 23px 32px rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+}
+
+.contacts__header {
+  margin-bottom: 28px;
+}
+
+.contacts__info {
+  font-size: 14px;
+  line-height: 15px;
+  font-weight: 400;
+  color: #5e606a;
+
+  margin: 0;
+  padding-left: 28px;
+}
+
+.contacts__adress {
+  position: relative;
+
+  &::before {
+    width: 11px;
+    height: 17px;
+    content: "";
+    position: absolute;
+    left: -26px;
+    top: 2px;
+
+    background-image: url("../img/marker-map.svg");
+  }
+}
+
+.contacts__mail {
+  position: relative;
+
+  &::before {
+    width: 13px;
+    height: 10px;
+    content: "";
+    position: absolute;
+    left: -27px;
+    top: 4px;
+
+    background-image: url("../img/mail.jpg");
+  }
+}
+
+.contacts__phone {
+  position: relative;
+
+  &::before {
+    width: 14px;
+    height: 15px;
+    content: "";
+    position: absolute;
+    left: -26px;
+    top: 1px;
+
+    background-image: url("../img/phone.jpg");
+  }
+}
+
+.contacts__info span {
+  max-width: 160px;
+  display: block;
+
+  margin-bottom: 23px;
+}
+
+.contacts__info span:last-child {
+  margin-bottom: 0;
+}
+
+.contacts__info a {
+  font-size: 14px;
+  line-height: 15px;
+  font-weight: 400;
+  color: #5e606a;
+  text-decoration: none;
 }
 
 @media (min-width: @tablet-width) {
+  .contacts {
+    padding: 62px 15px 85px;
+
+    background-image: url("../img/map-tablet.jpg");
+    background-size: cover;
+  }
+
   .contacts__contant-wrapper {
     min-width: 387px;
 
-    margin-left: 29px;
+    margin-left: 0;
+    padding: 64px 59px 77px;
+  }
+
+  .contacts__header {
+    margin-bottom: 58px;
+  }
+
+  .contacts__info span {
+    max-width: 100%;
+
+    margin-bottom: 26px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .contacts {
+    padding: 121px 15px 149px;
+
+    background-image: url("../img/map-desktop.jpg");
+  }
+
   .contacts__contant-wrapper {
     min-width: 458px;
 
     margin-left: 18px;
+    padding: 88px 88px 118px;
   }
 }

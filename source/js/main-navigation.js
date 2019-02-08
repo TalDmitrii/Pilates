@@ -3,6 +3,8 @@
 (function useNavigation () {
   var mainNav = document.querySelector('.main-navigation');
   var navToggle = document.querySelector('.main-navigation__toggle');
+  var navList = document.querySelector('.main-navigation__list');
+  var navItems = navList.querySelectorAll('.main-navigation__item');
 
   mainNav.classList.remove('main-navigation--nojs');
 
@@ -20,4 +22,13 @@
       mainNav.classList.remove('main-navigation--opened');
     }
   });
+
+  navList.addEventListener('click', function (evt) {
+    var target = evt.target;
+    
+    if (target.classList.contains('main-navigation__anchor')) {
+      mainNav.classList.remove('main-navigation--opened');
+      mainNav.classList.add('main-navigation--closed');
+    }
+  })
 })();

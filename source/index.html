@@ -25,11 +25,11 @@
           </button>
           <div class="main-navigation__list-wrapper">
             <ul class="main-navigation__list">
-              <li class="main-navigation__item"><a href="item-1">О нас</a></li>
-              <li class="main-navigation__item"><a href="item-2">Услуги</a></li>
-              <li class="main-navigation__item"><a href="item-3">Отзывы</a></li>
-              <li class="main-navigation__item"><a href="item-4">FAQ</a></li>
-              <li class="main-navigation__item"><a href="item-5">Контакты</a></li>
+              <li class="main-navigation__item"><a class="main-navigation__anchor" href="#item-1">О нас</a></li>
+              <li class="main-navigation__item"><a class="main-navigation__anchor" href="#item-2">Услуги</a></li>
+              <li class="main-navigation__item"><a class="main-navigation__anchor" href="#item-3">Отзывы</a></li>
+              <li class="main-navigation__item"><a class="main-navigation__anchor" href="#item-4">FAQ</a></li>
+              <li class="main-navigation__item"><a class="main-navigation__anchor" href="#item-5">Контакты</a></li>
             </ul>
             <div class="request-call">
               <span class="request-call__phone-number">
@@ -60,7 +60,7 @@
       </div>
     </header>
     <main class="page-container" id="main-contant">
-      <section class="about-us">
+      <section class="about-us" id="item-1">
         <div class="about-us__inner-wrapper">
           <h2 class="about-us__header section-header">1. О нас</h2>
           <h3 class="about-us__block-header block-header">
@@ -94,7 +94,7 @@
           </li>
         </ul>
       </section>
-      <section class="services">
+      <section class="services" id="item-2">
         <div class="services__bg-wrapper">
           <div class="services__block-wrapper services__block-wrapper--billboard">
             <h2 class="services__header section-header">2. Услуги</h2>
@@ -124,11 +124,27 @@
                   <p>Растяжка на ул. Ленина</p>
                 </li>
                 <li class="produced-works__item">
-                  <img src="" width="292" height="188" alt="Пример нашей работы">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1170px)" srcset="img/billboard-desktop.webp">
+                    <source type="image/webp" media="(min-width: 750px)" srcset="img/billboard-tablet.webp">
+                    <source type="image/webp" srcset="img/billboard.webp">
+      
+                    <source media="(min-width: 1170px)" srcset="img/billboard-desktop.jpg">
+                    <source media="(min-width: 750px)" srcset="img/billboard-tablet.jpg">
+                    <img src="img/billboard.jpg" width="292" height="188" alt="Пример нашей работы">
+                  </picture>
                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, recusandae!</p>
                 </li>
                 <li class="produced-works__item">
-                  <img src="" width="292" height="188" alt="Пример нашей работы">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1170px)" srcset="img/billboard-desktop.webp">
+                    <source type="image/webp" media="(min-width: 750px)" srcset="img/billboard-tablet.webp">
+                    <source type="image/webp" srcset="img/billboard.webp">
+      
+                    <source media="(min-width: 1170px)" srcset="img/billboard-desktop.jpg">
+                    <source media="(min-width: 750px)" srcset="img/billboard-tablet.jpg">
+                    <img src="img/billboard.jpg" width="292" height="188" alt="Пример нашей работы">
+                  </picture>
                   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, vitae.</p>
                 </li>
               </ul>
@@ -197,62 +213,62 @@
           </div>
         </div>
       </section>
-      <section class="feedback">
+      <section class="feedback" id="item-3">
         <h2 class="feedback__header section-header">3. Отзывы</h2>
-        <ul class="feedback__list">
-          <li class="feedback__item">
-            <img class="feedback__author-photo" src="img/author-1.jpg" alt="фотография пользователя">
-            <p class="feedback__author-text">
-              Обратился в компанию АртАктив за визитками. Это мой первый опыт, поэтому немного нервничал, не знал, с чего начать. 
-              Остался доволен, потому что мне всё объяснили, показали и сделали по высшему разряду. Советую!
-              <b>Александров Максим, 24 года</b>
-              <a href="#">vk.com/mr.sharp</a>
-            </p>
-          </li>
-          <li class="feedback__item">
-            <img class="feedback__author-photo" src="" alt="фотография пользователя">
-            <p class="feedback__author-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quod earum esse consequatur eaque, libero maiores 
-              omnis commodi distinctio adipisci fugiat cupiditate, dicta ullam, nesciunt quo ipsam neque numquam reiciendis.
-              <b>Lorem ipsum dolor sit amet.</b>
-              <a href="#">Lorem, ipsum.</a>
-            </p>
-          </li>
-          <li class="feedback__item">
-            <img class="feedback__author-photo" src="" alt="фотография пользователя">
-            <p class="feedback__author-text">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste atque minus, voluptatem ipsa dolore, 
-              inventore dignissimos consequuntur ipsam odio ipsum a fugiat laborum repudiandae dolores minima voluptate nulla vitae quos!
-              <b>Lorem ipsum dolor sit amet.</b>
-              <a href="#">Lorem, ipsum.</a>
-            </p>
-          </li>
-          <li class="feedback__item">
-            <img class="feedback__author-photo" src="" alt="фотография пользователя">
-            <p class="feedback__author-text">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste atque minus, voluptatem ipsa dolore, 
-              inventore dignissimos consequuntur ipsam odio ipsum a fugiat laborum repudiandae dolores minima voluptate nulla vitae quos!
-              <b>Lorem ipsum dolor sit amet.</b>
-              <a href="#">Lorem ipsum dolor sit amet.</a>
-            </p>
-          </li>
-          <li class="feedback__item">
-            <img class="feedback__author-photo" src="" alt="фотография пользователя">
-            <p class="feedback__author-text">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste atque minus, voluptatem ipsa dolore, 
-              inventore dignissimos consequuntur ipsam odio ipsum a fugiat laborum repudiandae dolores minima voluptate nulla vitae quos!
-              <b>Lorem ipsum dolor sit amet.</b>
-              <a href="#">Lorem, ipsum.</a>
-            </p>
-          </li>
-        </ul>
-        <div class="feedback__slider slider__buttons">
-          <button class="slider__button slider__button--next" aria-label="Переключить слайдер вперёд">Назад</button>
-          <button class="slider__button slider__button--prev" aria-label="Переключить слайдер назад">Вперёд</button>
+        <div class="feedback__content-wrapper">
+          <ul class="feedback__list">
+            <li class="feedback__item">
+              <picture>
+                <source type="image/webp" srcset="img/author-1.webp">
+  
+                <img class="feedback__author-photo" src="img/author-1.jpg" width="136" height="136" alt="фотография пользователя">
+              </picture>
+              <p class="feedback__author-text">
+                Обратился в компанию АртАктив за визитками. Это мой первый опыт, поэтому немного нервничал, не знал, с чего начать. 
+                Остался доволен, потому что мне всё объяснили, показали и сделали по высшему разряду. Советую!
+                <b>Александров Максим, 24 года</b>
+                <a href="#">vk.com/mr.sharp</a>
+              </p>
+            </li>
+            <li class="feedback__item">
+              <picture>
+                <source type="image/webp" srcset="img/author-2.webp">
+  
+                <img class="feedback__author-photo" src="img/author-2.jpg" width="136" height="136" alt="фотография пользователя">
+              </picture>
+              <p class="feedback__author-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quod earum esse consequatur eaque, libero maiores 
+                omnis commodi distinctio adipisci fugiat cupiditate, dicta ullam, nesciunt quo ipsam neque numquam reiciendis.
+                <b>Lorem ipsum dolor sit amet.</b>
+                <a href="#">Lorem, ipsum.</a>
+              </p>
+            </li>
+            <li class="feedback__item">
+              <picture>
+                <source type="image/webp" srcset="img/author-2.webp">
+  
+                <img class="feedback__author-photo" src="img/author-2.jpg" width="136" height="136" alt="фотография пользователя">
+              </picture>
+              <p class="feedback__author-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste atque minus, voluptatem ipsa dolore, 
+                inventore dignissimos consequuntur ipsam odio ipsum a fugiat laborum repudiandae dolores minima voluptate nulla vitae quos!
+                <b>Lorem ipsum dolor sit amet.</b>
+                <a href="#">Lorem, ipsum.</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="feedback__slider slider-buttons">
+          <button class="slider-buttons__button slider-buttons__button--prev" aria-label="Переключить слайдер вперёд">
+            <span>Назад</span>
+          </button>
+          <button class="slider-buttons__button slider-buttons__button--next slider-buttons__button--active" aria-label="Переключить слайдер назад">
+            <span>Вперёд</span>
+          </button>
         </div>
       </section>
-      <section class="faq">
-        <h2 class="faq-header section-header">4. Частые вопросы (FAQ)</h2>
+      <section class="faq" id="item-4">
+        <h2 class="faq__header section-header">4. Частые вопросы (FAQ)</h2>
         <ul class="faq__list">
           <li class="faq__item">
             <h3 class="faq__item-header">Что такое макет?</h3>
@@ -298,7 +314,7 @@
         <form class="faq__form form-consultation" action="https://echo.htmlacademy.ru" method="post">
           <p class="form-consultation__intro">
             <span><i>Есть вопросы?</i></span>
-            <span>Оставьте заявку на консультацию</span>
+            <span>Оставьте заявку<br> на консультацию</span>
           </p>
           <div class="form-consultation__inner-wrapper">
             <p class="form-consultation__input-wrapper">
@@ -315,7 +331,7 @@
       </section>
     </main>
     <footer class="page-footer">
-      <section class="contacts">
+      <section class="contacts" id="item-5">
         <div class="contacts__contant-wrapper">
           <h2 class="contacts__header section-header">5. Контакты</h2>
           <p class="contacts__info">
@@ -328,13 +344,16 @@
         </div>
       </section>
       <div class="documents">
-        <p class="documents__copyright">ООО «АртАктив», 2017 ©</p>
-        <a href="#" aria-label="Политика конфиденциальноси">Политика конфиденциальноси</a>
-        <p class="documents__producer">Designed by Sergey Strogiy</p>
+        <div class="documents__content-wrapper">
+          <p class="documents__copyright">ООО «АртАктив», 2017 ©</p>
+          <a href="#" aria-label="Политика конфиденциальноси">Политика конфиденциальности</a>
+          <p class="documents__producer">Designed by Sergey Strogiy</p>
+        </div>
       </div>
     </footer>
     <script src="js/webp-support.min.js"></script>
     <script src="js/picturefill.min.js"></script>
     <script src="js/main-navigation.min.js"></script>
+    <script src="js/feedback-slider.min.js"></script>
   </body>
 </html>

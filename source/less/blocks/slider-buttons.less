@@ -1,13 +1,12 @@
 .slider-buttons {
   width: 225px;
-  display: flex;
-  justify-content: space-between;
+  position: relative;
 }
 
 .slider-buttons__button {
   width: 92px;
   height: 17px;
-  position: relative;
+  position: absolute;
   display: block;
 
   font-size: 0;
@@ -61,9 +60,14 @@
   }
 }
 
+.slider-buttons__button--prev {
+  left: 0;
+}
 
 .slider-buttons__button--next {
-  transform: rotate(180deg) translateY(-1px);
+  right: 0;
+
+  transform: rotate(180deg);
 }
 
 .slider-buttons__button span {
@@ -72,4 +76,12 @@
   display: block;
 
   background-color: #883eca;
+}
+
+.feedback .slider-buttons__button {
+  opacity: 0.2;
+}
+
+.feedback .slider-buttons__button--active {
+  opacity: 1;
 }
