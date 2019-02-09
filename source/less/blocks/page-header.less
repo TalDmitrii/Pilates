@@ -101,6 +101,7 @@
 
   .page-header__contant-wrapper {
     max-width: 750px;
+    align-items: flex-end;
 
     padding-bottom: 70px;
   }
@@ -108,7 +109,7 @@
   .page-header__info {
     max-width: 275px;
 
-    margin-left: auto;
+    // margin-left: auto;
   }
 
   .page-header__slogan {
@@ -138,8 +139,15 @@
 
 @media (min-width: @desktop-width) {
   .page-header {
-    background-image: url("../img/curvilinear-bg-desktop.jpg");
     background-size: cover;
+  }
+
+  .webp .page-header {
+    background-image: url("../img/curvilinear-bg-desktop.webp");
+  }
+
+  .no-webp .page-header {
+    background-image: url("../img/curvilinear-bg-desktop.jpg");
   }
 
   .page-header__bg-wrapper {

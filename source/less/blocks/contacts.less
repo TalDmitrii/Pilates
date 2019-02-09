@@ -2,10 +2,17 @@
   padding: 67px 15px 199px;
 
   background-color: #65269d;
-  background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
   background-size: 400px auto;
   background-position: center;
+}
+
+.webp .contacts {
+  background-image: url("../img/map.webp");
+}
+
+.no-webp .contacts {
+  background-image: url("../img/map.jpg");
 }
 
 .contacts__contant-wrapper {
@@ -101,8 +108,15 @@
   .contacts {
     padding: 62px 15px 85px;
 
-    background-image: url("../img/map-tablet.jpg");
     background-size: cover;
+  }
+
+  .webp .contacts {
+    background-image: url("../img/map-tablet.webp");
+  }
+  
+  .no-webp .contacts {
+    background-image: url("../img/map-tablet.jpg");
   }
 
   .contacts__contant-wrapper {
@@ -126,7 +140,13 @@
 @media (min-width: @desktop-width) {
   .contacts {
     padding: 121px 15px 149px;
+  }
 
+  .webp .contacts {
+    background-image: url("../img/map-desktop.webp");
+  }
+  
+  .no-webp .contacts {
     background-image: url("../img/map-desktop.jpg");
   }
 

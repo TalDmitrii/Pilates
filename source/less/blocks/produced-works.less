@@ -4,8 +4,17 @@
 
 .produced-works__list {
   .list-reset();
+  min-width: 290px;
+  min-height: 226px;
+  position: relative;
 
   margin-bottom: 26px;
+}
+
+.produced-works__item {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .produced-works__item img {
@@ -13,24 +22,54 @@
 
   border-radius: 17px;
 
-  box-shadow: 0 -15px 0 -10px #b6b1bb,
-              0 -24px 0 -15px #e2dce8,
-              0 20px 46px rgba(80, 9, 79, 0.35);
+  box-shadow: 0 20px 46px rgba(80, 9, 79, 0.35);
 }
 
 .produced-works__item p {
+  max-width: 290px;
+
   font-size: 13px;
   line-height: 24px;
 
   margin: 0;
+
+  opacity: 0;
 }
 
-.produced-works__item:not(:first-child) {
-  display: none;
+.produced-works__item--front {
+  z-index: 3;
 }
 
-.produced-works .services__slider {
+.produced-works__item--middle {
+  z-index: 2;
+
+  transform: scale(0.95) translate3d(-2px, -12px, 300px);
+}
+
+.produced-works__item--back {
+  z-index: 1;
+
+  transform: scale(0.9) translate3d(-4px, -24px, 300px);
+}
+
+.produced-works__item.produced-works__item--active {
+  transform: scale(1);
+}
+
+.produced-works__item--active p {
+  opacity: 1;
+}
+
+.produced-works__slider {
   height: 17px;
+}
+
+.produced-works .slider-buttons__button {
+  opacity: 0.2;
+}
+
+.produced-works .slider-buttons__button--active {
+  opacity: 1;
 }
 
 @media (min-width: @tablet-width) {
@@ -39,6 +78,10 @@
     z-index: 10;
 
     margin-bottom: 49px;
+  }
+
+  .produced-works__list {
+    min-height: 520px;
   }
 
   .produced-works__item {
@@ -53,6 +96,22 @@
 
     margin-bottom: 34px;
   }
+
+  .produced-works__item--middle {
+    transform: scale(0.96) translate3d(0, -20px, 600px);
+  }
+  
+  .produced-works__item--back {
+    transform: scale(0.9) translate3d(0, -46px, 500px);
+  }
+
+  .produced-works__item p {
+    text-align: end;
+  }
+
+  .produced-works__slider {
+    margin-top: -40px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -60,6 +119,11 @@
     align-self: flex-end;
      
     margin-top: -340px;
+  }
+
+  .produced-works__list {
+    min-width: 570px;
+    min-height: 520px;
   }
 
   .produced-works__item img {

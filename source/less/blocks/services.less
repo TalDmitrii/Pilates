@@ -45,9 +45,16 @@
 .services__bg-wrapper:nth-child(2) {
   position: relative;
 
-  background-image: url("../img/yellow-sofa.png");
   background-repeat: no-repeat;
   background-position: 52px 339px;
+}
+
+.webp .services__bg-wrapper:nth-child(2) {
+  background-image: url("../img/yellow-sofa.webp");
+}
+
+.no-webp .services__bg-wrapper:nth-child(2) {
+  background-image: url("../img/yellow-sofa.png");
 }
 
 .services__block-wrapper--billboard {
@@ -156,9 +163,16 @@
 .services__block-wrapper--all {
   padding: 66px 15px 61px;
 
-  background-image: url("../img/firstyle.png");
   background-repeat: no-repeat;
   background-position: center 570px;
+}
+
+.webp .services__block-wrapper--all {
+  background-image: url("../img/firstyle.webp");
+}
+
+.no-webp .services__block-wrapper--all {
+  background-image: url("../img/firstyle.png");
 }
 
 .services__block-wrapper--all .services__block-header{
@@ -216,7 +230,6 @@
   }
 
   .services__bg-wrapper:nth-child(2) {
-    background-image: url("../img/yellow-sofa-tablet.png");
     background-position: right -280px top 430px;
 
     &::after {
@@ -233,6 +246,14 @@
   
       box-shadow: -7px -48px 0 0 #883eca;
     }
+  }
+
+  .webp .services__bg-wrapper:nth-child(2) {
+    background-image: url("../img/yellow-sofa-tablet.webp");
+  }
+  
+  .no-webp .services__bg-wrapper:nth-child(2) {
+    background-image: url("../img/yellow-sofa-tablet.png");
   }
 
   .services__order-consultation {
@@ -272,15 +293,25 @@
   }
 
   .services__bg-wrapper:nth-child(3) {
-    background-image: url("../img/firstyle-tablet.png");
     background-repeat: no-repeat;
     background-position: 120% 455px;
+  }
+
+  .webp .services__bg-wrapper:nth-child(3) {
+    background-image: url("../img/firstyle-tablet.webp");
+  }
+
+  .no-webp .services__bg-wrapper:nth-child(3) {
+    background-image: url("../img/firstyle-tablet.png");
   }
 
   .services__block-wrapper--all {
     padding-top: 108px;
     padding-bottom: 118px;
+  }
 
+  .webp .services__block-wrapper--all,
+  .no-webp .services__block-wrapper--all {
     background-image: none;
   }
 
@@ -365,7 +396,7 @@
     width: 473px;
     height: 117px;
 
-    margin-top: -223px;
+    margin-top: -229px;
     margin-bottom: 0;
   }
 
@@ -377,8 +408,15 @@
   .services__bg-wrapper:nth-child(2) {
     display: flex;
 
-    background-image: url("../img/yellow-sofa-desktop.png");
     background-position: -140px center;
+  }
+
+  .webp .services__bg-wrapper:nth-child(2) {
+    background-image: url("../img/yellow-sofa-desktop.webp");
+  }
+  
+  .no-webp .services__bg-wrapper:nth-child(2) {
+    background-image: url("../img/yellow-sofa-desktop.png");
   }
 
   .services__block-wrapper--interior {
@@ -400,21 +438,33 @@
     margin-bottom: 57px;
   }
 
-  .services__bg-wrapper:nth-child(3) {
+  .no-webp .services__bg-wrapper:nth-child(3),
+  .webp .services__bg-wrapper:nth-child(3) {
     background-image: none;
   }
 
-  .services__block-wrapper--all {
+  .no-webp .services__block-wrapper--all,
+  .webp .services__block-wrapper--all {
     padding-top: 138px;
     padding-bottom: 157px;
+  }
 
+  
+
+  .webp .services__block-wrapper--all {
+    background-image: url("../img/paper-plane-desktop.svg"),
+                      url("../img/firstyle-desktop.webp");
+    background-position: right 400px, right top;
+  }
+
+  .no-webp .services__block-wrapper--all {
     background-image: url("../img/paper-plane-desktop.svg"),
                       url("../img/firstyle-desktop.png");
     background-position: right 400px, right top;
   }
 
   .services__block-wrapper--all .services__form {
-    max-width: 765px;
+    max-width: 885px;
 
     background-image: none;
   }
