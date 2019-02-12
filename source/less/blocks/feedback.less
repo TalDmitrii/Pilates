@@ -76,6 +76,15 @@
   color: #3594dd;
 
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: @button-color;
+  }
+
+  &:active {
+    color: fade(@button-color, 60%);
+  }
 }
 
 // .feedback__item:not(:first-child) {
